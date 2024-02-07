@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Demon Characters</title>
+</head>
+{% block content %}
+
+{% for person in demons %}
+
+    <div class="container border border-warning rounded">
+        <div class="border border-success rounded">
+            <li>{{ person.first_name}}, {{person.last_name}}</li>
+        </div>
+        <li>{{ person.age }}</li>
+        <li>{{ person.category }}</li>
+        <li>{{person.element_type}}</li>
+    </div>
+
+{% endfor %}
+
+{% endblock %}
+
+# f"Name: {self.first_name} {self.last_name} Category:{self.category}, Age: {self.age}, Element Type: {self.element_type}"

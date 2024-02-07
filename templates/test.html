@@ -1,0 +1,65 @@
+{% load static %}
+<html lang="en">
+    
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+        
+      </style>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    </head>
+<body>
+    <div id="navbar">
+        <ul id="navbar">
+            <li><a href="www.google.com">About</a></li>
+            <li><a href="www.jbh.co.uk">Contact</a></li>
+            <li><a href="www.hhhs.net">Blog</a></li>
+            <li><a href="{% url 'submit_slayer' %}">Submit Slayer</a></li>
+        </ul>
+
+    </div>
+
+    <div class="hero">
+        <h1>The first page</h1>
+        <container>
+            <div id="top_double_section">
+                <img id="left_image" src="{% static 'images/front image.webp'%}" width="300x300">
+                <a href="http://127.0.0.1:8000/Ezio">Ezios Page</a>
+                <p id="right_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto natus blanditiis consequatur ullam suscipit facilis nostrum! Dolor cum iusto animi totam fugiat quae quidem, est fugit in nam eligendi quas?
+        Explicabo esse minima vel necessitatibus saepe. Quidem nulla corrupti eum quis iste molestias ut ipsum debitis natus incidunt a illum alias voluptatibus, mollitia dolorem quaerat! A adipisci unde necessitatibus odit.
+        Vitae, beatae magni. Vitae consequatur unde voluptatum molestiae quibusdam temporibus possimus repellat harum illum quasi culpa suscipit porro, deleniti similique.
+        Eum quas beatae ex adipisci tempora velit necessitatibus nulla cumque reiciendis alias sed perspiciatis facilis nihil dignissimos in exercitationem porro ducimus obcaecati similique id, at vitae debitis quia. Recusandae, vel.</p>
+            </div>
+        </container>
+    </div>
+
+    <div id="card">
+        <img src="{% static 'images/front image.webp'%}" width="300x300">
+        <div class="overlay">
+          <p>Your overlay text here</p>
+        </div>
+      </div>
+      
+
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+        {{person}}
+        {% endblock %}</title>
+</head>
+<body>
+    <div class="card_class">
+        <h1>
+            {% block content %}
+            {{person}}
+            {% endblock %}
+        </h1>
+        <h2>
+            {% block subheading %}
+            {{age}}
+            {% endblock %}
+        </h2>
+        <h3>
+            {% block element %}
+            {{element}}
+            {% endblock %}
+        </h3>
+        <h3>
+            {% block category %}
+            {{category}}
+            {% endblock %}
+        </h3>
+    </div>
+    <p>Yes, it worked!</p>
+</body>
+</html>

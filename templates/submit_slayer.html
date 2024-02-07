@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Slayer!</title>
+</head>
+<body>
+    {% block content %}
+    <div class="container pt-3">
+        <h1>Submit a Slayer</h1>
+        {% if submitted %}
+                Your slayer was added to the database!!!
+        {% else %}
+
+        
+        <form action ="" method="POST">
+            {% csrf_token %}
+
+            {{ form.as_p }}
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          {% endif %}
+    </div>
+</body>
+{% endblock %}
+</html>
