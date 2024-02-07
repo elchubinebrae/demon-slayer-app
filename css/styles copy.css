@@ -1,0 +1,186 @@
+
+:root {
+    --demon1: #6F2DBD;
+    --demon2: #A663CC;
+    --demon3: #B298DC;
+    --demon4: #B8D0EB;
+    --demon5: #B9FAF8;
+    --background: #222021;
+  }
+
+body {
+    background-color: var(--background);
+    color: var(--demon5);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+}
+
+#navbar {
+    height: 100vh;
+    width: 150px;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--background);
+  }
+  
+
+  
+#navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin:5px;
+    text-decoration: none;
+
+    border-radius: 15px;
+    height: 145px;
+    
+  }
+
+  .navbarcard li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin:5px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 145px;
+    
+    
+  }
+
+#navbarcard1 {
+  background-color: var(--demon1);
+  font-family: "Protest Revolution", sans-serif;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height:115px;
+}
+
+#navbarcard2 {
+  background-color: var(--demon2);
+  font-family: "Protest Revolution", sans-serif;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height:115px;
+}
+
+#navbarcard3 {
+  background-color: var(--demon3);
+  font-family: "Protest Revolution", sans-serif;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height:115px;
+}
+
+#navbarcard4 {
+  background-color: var(--demon4);
+  font-family: "Protest Revolution", sans-serif;
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height:115px;
+  text-wrap: wrap;
+}
+
+#navbarcard5 {
+  background-color: var(--demon5);
+  color: var(--demon1);
+  font-family: "Protest Revolution", sans-serif;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height:115px;
+  text-wrap: wrap;
+}
+#navbarcard6 {
+  background-color: var(--background);
+  color: white;
+  font-family: "Protest Revolution", sans-serif;
+  font-size: x-large;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height:115px;
+  text-wrap: wrap;
+}
+  
+  /* Change the link color to #111 (black) on hover */
+#navbar li a:hover {
+    background-color: var(--demon3);
+    text-decoration: none;
+    color: var(--demon1);
+  }
+
+#navbar .active {
+    background-color: #04AA6D;
+  }
+
+.hero {
+    margin:10px;
+}
+#top_double_section {
+    display: flex;
+    align-items: center;
+}
+#left_image {
+    align-items: left;
+    margin: 25px;
+}
+
+#right_description {
+    flex: 1;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px
+}
+
+#card {
+    
+    flex: 1;
+    margin: 15px;
+
+    
+  }
+  
+  #card img {
+    width: 300;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px black;
+  }
+  
+  #card:hover img {
+    transform: scale(1.3);
+  }
+  
+  #card .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  #card img :hover.overlay {
+    opacity: 1;
+  }
+  
